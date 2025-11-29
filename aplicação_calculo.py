@@ -51,7 +51,7 @@ prob_ate_a = norm.cdf(a, loc=media, scale=desvio_padrao)
 probabilidade_intervalo = prob_ate_b - prob_ate_a
 
 # 4. APRESENTAÇÃO DOS RESULTADOS
-# Exibimos o resultado de forma clara e formatada.
+# Exibimos o resultado.
 print("--- ANÁLISE DE TEMPO DE RESPOSTA DO SERVIDOR ---")
 print(f"Parâmetros da Distribuição Normal:")
 print(f"  - Média (μ): {media}s")
@@ -66,7 +66,7 @@ print("Conclusão: A probabilidade de o tempo de resposta do servidor estar")
 print(f"entre {a} e {b} segundos é de aproximadamente {probabilidade_intervalo:.2%}.")
 
 
-# 5. VISUALIZAÇÃO GRÁFICA (OPCIONAL, MAS RECOMENDADO PARA O TRABALHO)
+# 5. VISUALIZAÇÃO GRÁFICA
 # Esta parte gera um gráfico da curva da distribuição normal e destaca a
 # área que corresponde à probabilidade calculada.
 
